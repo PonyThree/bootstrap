@@ -2,19 +2,15 @@
 ## 二、今日内容  
 #### 1.Bootstrap  
 + 调试,使用webstorm
-注册码生成器
-安装包
-注册-->help-->register
-+ 注册--help--register   
-创建项目
-设置字体大小:
-在file-->setting->输入font可以改变字体大小
++ 安装包
++ 注册--help--register
+设置字体大小和颜色
+在file-->setting-->输入font可以改变字号
 color&font-->html的选项,可以更改html文件的字体颜色
 修改tab
 general-->editor tab-->修改成2
 修改快捷键
 keymap中选择eclipse
-所有使用boot的代码都必须放在container类的包裹中
 #### 2.全局css样式  
 + 2.1按钮相关的css样式  
 btn基本按钮  
@@ -72,44 +68,46 @@ table-danger/success/info/warning
 需要在table的父级元素上,添加类table-responsive   
 #### 5.辅助类  
 边框  
-border 基础类  
++ border 基础类
 border-top/right/bottom/left  设置4个方向的边框
 border-0  取消边框
 border-top-0  取消上边框
 border-danger/success/info/warning... 边框颜色  
-rounded/rounded-0设置圆角/取消圆角    
++ rounded/rounded-0设置圆角/取消圆角
 rounded-top/right/left/bottom 设置对应的圆角    
-浮动  
++ 浮动
 float-*-left/right  
 *:xl/lg/md/sm  
 clearfix    
-显示  
++ 显示
 visible/invisible显示/隐藏  
-背景  
++ 背景
 bg-danger/success/info...  
-居中对齐  
++ 居中对齐
 m-auto  
-margin  
-m-*(0/1/2/3/4/5)--->(0/0.25/0.5/1/1.5/3)  
-padding  
-p-*(0/1/2/3/4/5)--->(0/0.25/0.5/1/1.5/3)   
-pt-*/pr-*/pb-*/pl-(0/1/2/3/4/5)---(0/0.25/0.5/1/1.5/3)  
++ margin
+m-\*(0/1/2/3/4/5)--->(0/0.25/0.5/1/1.5/3)
++ padding
+p-\*(0/1/2/3/4/5)--->(0/0.25/0.5/1/1.5/3)
+pt-\*/pr-\*/pb-\*/pl-(0/1/2/3/4/5)---(0/0.25/0.5/1/1.5/3)
 宽度/高度  
-w-*(25/50/75/100)  
+w-\*(25/50/75/100)
 h-*同上  
 ## 三、栅格布局 (重要******)   
 + 3.1web页面布局的方法 
     + 3.1.1table布局   
     ```  
     table布局  
-    优点：简单,容易控制  
-    缺点:语义错误 
-    渲染效率低(最后一个数据加载完成之后，才能统一开始渲染)  
+        优点：简单,容易控制
+        缺点:语义错误
+        缺点：渲染效率低(最后一个数据加载完成之后，才能统一开始渲染)
     div+css  
-    语义正确，渲染效率高  
-    控制比较麻烦  
-    更繁琐  
-    bootstrap中的栅格布局   
+        优点：语义正确，渲染效率高
+        缺点：控制比较麻烦
+        缺点：媒体查询写起来更繁琐
+    bootstrap中的栅格布局
+      优点：简单，容易控制，语义正确，渲染效率高，支持响应式
+      缺点：页面如果太复杂，不太适合使用
     ```  
 总结：  
 1.最外层需要使用容器  
