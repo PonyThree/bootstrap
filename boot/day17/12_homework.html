@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="Author" content="ponywei">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="shortcut icon" href="../img/ponywei.ico">
+    <!--响应式视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!--引入boot的文件,引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        /*修改指示符的样式为圆角*/
+        .carousel-indicators li{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius:50%;
+        }
+        /*修改圆角默认颜色样式*/
+        .carousel-indicators li.active{
+            background-color: #0aa1ed;
+        }
+        .carousel-caption{
+            top:-12px;
+        }
+        /*修改左右箭头的外部轮廓大小*/
+        .carousel-control-prev,.carousel-control-next{
+            width: 3%;
+            height: 20%;
+            margin:auto;
+            background-color: rgba(0,0,0,.5);
+        }
+        .navbar_fixed_top{
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--折叠导航栏 navbar弹性+相对定位 navbar-expand-*控制横向或者纵向显示-->
+    <div class="navbar navbar-expand-md bg-dark navbar-dark navbar_fixed_top">
+        <a href="" class="navbar-brand">Bootstrap中文网</a>
+        <!--折叠按钮-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--折叠导航的内容  navbar-collapse用来控制内容显示到下面-->
+        <div class="collapse navbar-collapse" id="content">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link">Javascript</a> </li>
+                <li class="nav-item"><a href="" class="nav-link">HTML/CSS</a> </li>
+                <li class="nav-item"><a href="" class="nav-link">JQuery</a> </li>
+                <li class="nav-item"><a href="" class="nav-link">Bootstrap</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--轮播图-->
+    <div class="carousel" id="loop">
+        <!--轮播的图片区域-->
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="image/banner1.png" alt="" class="w-100"/>
+                <!--轮播文字和标题-->
+                <div class="carousel-caption">
+                    <h3 class="text-info">第一张图片</h3>
+                    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/banner2.png" alt="" class="w-100"/>
+                <!--轮播文字和标题-->
+                <div class="carousel-caption">
+                    <h3 class="text-info">第二张图片</h3>
+                    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/banner3.png" alt="" class="w-100"/>
+                <!--轮播文字和标题-->
+                <div class="carousel-caption">
+                    <h3 class="text-info">第三张图片</h3>
+                    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/banner4.png" alt="" class="w-100"/>
+                <!--轮播文字和标题-->
+                <div class="carousel-caption">
+                    <h3 class="text-info">第四张图片</h3>
+                    <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <!--导航指示条-->
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#loop" class="active"></li>
+            <li data-slide-to="1" data-target="#loop"></li>
+            <li data-slide-to="2" data-target="#loop"></li>
+            <li data-slide-to="3" data-target="#loop"></li>
+        </ul>
+        <!--左右箭头-->
+        <a href="#loop" class="carousel-control-prev" data-slide="prev">
+            <!--箭头图片-->
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#loop" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

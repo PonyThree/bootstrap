@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="Author" content="ponywei">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="shortcut icon" href="../img/ponywei.ico">
+    <!--响应式视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!--引入boot的文件,引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">打开模态框</button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    我是模态框的头部信息
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    我是模态框的主体信息
+                </div>
+                <div class="modal-footer">
+                    我是模态框的底部信息
+                    <button data-dismiss="modal" class="btn btn-danger">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

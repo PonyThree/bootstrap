@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="Author" content="ponywei">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="shortcut icon" href="../img/ponywei.ico">
+    <!--响应式视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!--引入boot的文件,引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>折叠导航栏</h1>
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!--不被折叠的导航选项-->
+        <a href="#" class="navbar-brand">Boot中文网</a>
+        <!--小屏幕下最右侧按钮:上面有三条横线-->
+        <!--向上兼容，所以小屏幕显示-->
+        <!--.navbar-expand .navbar-toggler {-->
+        <!--display: none;-->
+        <!--}-->
+        <button data-toggle="collapse" data-target="#content" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <!--导航栏中的菜单,小屏幕隐藏(垂直显示),大屏幕横向显示-->
+        <div class="collapse navbar-collapse" id="content">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link">JQuery</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Javascript</a></li>
+                <li class="nav-item"><a href="" class="nav-link">HTML/CSS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
