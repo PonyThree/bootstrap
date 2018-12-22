@@ -1,0 +1,50 @@
+$jd_red:#f10215;
+$w:300px;
+$h:100px;
+
+p{
+  color: $jd_red;
+  width: $w;
+  height: $h;
+  border:2px solid $jd_red;
+}
+$h:112px !default;
+div{
+  background-color: $jd_red;
+}
+#content{
+  color:#f00;
+  div.top{
+    margin:0 auto;
+  }
+  h1{
+    font-weight: normal;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+a{
+  color:red;
+  &:hover{
+    color:#0000ff;
+  }
+}
+div{
+  background-color: #ccc;
+  button{
+    background-color: #0aa1ed;
+    color:#fff;
+  }
+}
+nav,div,footer{
+  a{
+    color:#000;
+    &:hover{
+      color:#f00;
+    }
+  }
+}
+div{
+  border:{style:solid;width:1px;color:red;}
+}

@@ -1,0 +1,104 @@
+$jd_red:#f66;
+$w:200px;
+$h:100px;
+$jd_pink:hotpink;
+$myblue:#0aa1ed;
+$fontcolor:#fff;
+$myheight:2.5rem;
+p{
+  color: $jd_pink;
+  width: $w;
+  height: $h;
+  border:2px solid $jd_red;
+}
+div{
+  background-color: $jd_red;
+}
+.mybutton{
+  display:block;
+  background-color: $myblue;
+  color:$fontcolor;
+  text-decoration: none;
+  width: 8rem;
+  height: $myheight;
+  text-align: center;
+  line-height: $myheight;
+  border-radius: 2rem;
+  font-size: 8rem;
+  &:hover{
+    color:#f10215;
+  }
+}
+$w:200px;
+$h:200px;
+div{
+  width: $w;
+  height: $h;
+  transition:all 2s linear;
+  &:hover{
+    background-color: #ff0;
+    border-radius:50%;
+  }
+}
+@import "mycolor";
+p.p1{
+  width: $width;
+  height: $height;
+}
+@mixin myshadow{
+  box-shadow:0 0 50px 10px gray;
+}
+div{
+  @include myshadow;
+}
+p{
+  @include myshadow;
+}
+@mixin my_rounded{
+  border-radius:10px;
+}
+ul{
+  li{
+    padding:5px;
+    border:1px solid #ff0;
+    @include my_rounded;
+    a{
+      text-decoration:none;
+      color:gray;
+      &:hover{
+        color:red;
+      }
+    }
+  }
+}
+@mixin lin-colors($normal,$hover,$visited){
+  color:$normal;
+  &:hover{color:$hover};
+  &:visited{color:$visited};
+}
+ul li a{
+  @include lin-colors(#f00,#0f0,#00f);
+}
+#content a{
+  @include lin-colors(#afa,#aaf,#faf);
+}
+.my_round{
+  border:1px solid #f00;
+  border-radius: 50%;
+}
+.rounded-shadow{
+  @extend .my_round;
+  box-shadow:0 0 10px;
+}
+.my-border{
+  border:1px solid transparent;
+  width: 400px;
+  margin-left:20px;
+}
+.my-bottom-border{
+  @extend .my-border;
+  border-bottom-color:red;
+  &:hover{
+    border-bottom-color:#00f;
+  }
+}
