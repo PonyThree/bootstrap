@@ -14,76 +14,90 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
 </head>
 <body>
-<footer class="container">
+<div class="container">
         <!--底部服务图片区域-->
-        <ul class="row  list-unstyled justify-content-between m-auto pt-5 pb-5">
-            <li class="col-md-3 col-sm-6 text-center">
+        <ul class="d-flex  list-unstyled justify-content-around m-auto pt-5 pb-5">
+            <li>
                 <img src="image/icon1.png" alt="" class="img-fluid"/>
-                <p>品质保障</p>
+                <p class="color_gray my_small text-center">品质保障</p>
             </li>
-            <li class="col-md-3 col-sm-6 text-center">
+            <li>
                 <img src="image/icon2.png" alt="" class="img-fluid"/>
-                <p>私人订制</p>
+                <p class="color_gray my_small text-center">私人订制</p>
             </li>
-            <li class="col-md-3 col-sm-6 text-center">
+            <li>
                 <img src="image/icon3.png" alt="" class="img-fluid"/>
-                <p>学员特供</p>
+                <p class="color_gray my_small text-center">学员特供</p>
             </li>
-            <li class="col-md-3 col-sm-6 text-center">
+            <li>
                 <img src="image/icon4.png" alt="" class="img-fluid"/>
-                <p>专属特权</p>
+                <p class="color_gray my_small text-center">专属特权</p>
             </li>
         </ul>
-        <!--底部版权区域-->
-        <div class="row m-0 p-5 bg-white">
-            <!--左边logo-->
-            <div class="col-md-4 col-sm-12 p-0 mt-4">
-                <img src="image/logo.png" alt="" class="img-fluid text-center  mb-2"/>
-                <img src="image/footerFont.png" alt="" class="img-fluid text-center "/>
-            </div>
-            <!--中间帮助-->
-            <div class="col-md-4 col-sm-12  m-0 p-0 ">
-                <div class=" m-0 text-center  clearfix row">
-                        <!--左边买家帮助-->
-                            <ul class="list-unstyled text-center p-4 m-0 col-md-4 col-sm-12">
-                                <li class="font-weight-bold">买家帮助</li>
-                                <li>新手指南</li>
-                                <li>服务保障</li>
-                                <li>常见问题</li>
-                            </ul>
-                            <ul class="list-unstyled text-center p-4 m-0 col-md-4 col-sm-12">
-                                <li class="font-weight-bold">商家帮助</li>
-                                <li>商家入驻</li>
-                                <li>商家后台</li>
-                            </ul>
-                            <ul class="list-unstyled text-center p-4 m-0 col-md-4 col-sm-12">
-                                <li class="font-weight-bold">关于我们</li>
-                                <li>关于达内</li>
-                                <li>联系我们</li>
-                                <li>
-                                    <img src="image/wechat.png" alt="" class="mr-2"/>
-                                    <img src="image/sinablog.png" alt="" />
-                                </li>
-                            </ul>
+        <!--底部版权区域 左中右-->
+        <footer class="m-0 p-5 bg-white mt-5">
+            <div class="row">
+                <!--左边logo-->
+                <div class="col-lg-4 col-md-12 p-0 mt-4">
+                    <img src="image/logo.png" alt="" class="img-fluid text-center  mb-2"/>
+                    <img src="image/footerFont.png" alt="" class="img-fluid text-center "/>
                 </div>
-            </div>
-            <!--右边二维码-->
-            <div class="col-md-4 col-sm-12  d-flex p-0 justify-content-center p-4 text-center">
-                <!--左边-->
-                <div class="mr-3">
-                    <p class="mb-1">学子商城客户端</p>
-                    <img src="image/ios.png" alt="" class="d-block"/>
-                    <img src="image/android.png" alt="" class="d-block"/>
+                <!--中间帮助-->
+                <div class="col-lg-4 col-md-12  m-0 p-0 ">
+                    <div class=" m-0 text-center row">
+                            <!--左边买家帮助-->
+                                <div class="col-4">
+                                    <h6 class="my_small">买家帮助</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><a href="" class="my_small color_gray">新手指南</a> </li>
+                                        <li class="mb-2"><a href="" class="my_small color_gray">服务保障</a> </li>
+                                        <li class="mb-2"><a href="" class="my_small color_gray">常见问题</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="my_small">商家帮助</h6>
+                                    <ul class="list-unstyled">
+                                        <li  class="mb-2"><a href=" "  class="my_small color_gray">商家入驻</a></li>
+                                        <li  class="mb-2"><a href=" " class="my_small color_gray">商家后台</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="my_small">关于我们</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><a href="" class="my_small color_gray">关于达内</a></li>
+                                        <li class="mb-2"><a href="" class="my_small color_gray">联系我们</a></li>
+                                        <li class="mb-2">
+                                            <img src="image/wechat.png" alt="" class="mr-2"/>
+                                            <img src="image/sinablog.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="image/erweima.png" alt="" class=""/>
+                <!--右边二维码-->
+                <div class="col-lg-4 col-md-12">
+                    <!--左边-->
+                    <div class="row">
+                        <div class="col-6  pr-0  pl-5">
+                            <h6 class=" my_small text-center">学子商城客户端</h6>
+                            <div class="mb-1">
+                                <img src="image/ios.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="image/android.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="image/erweima.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
+                <p class="col-12 text-center mt-2">2017达内科技有限公司 版权所有 京ICP备08000853号-75</p>
             </div>
-            <p class="col-12 text-center mt-2">2017达内科技有限公司 版权所有 京ICP备08000853号-75</p>
-        </div>
-</footer>
+        </footer>
+</div>
 </body>
 </html>

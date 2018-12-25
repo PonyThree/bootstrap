@@ -1,0 +1,156 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #f5f5f5;
+}
+.my_small{
+    font-size:0.8rem;
+}
+.color_gray{
+    color:#808080;
+}
+/*设置iframe的宽高*/
+.my_header iframe,.my_footer iframe{
+    width:100%;
+}
+.my_main iframe{
+    width: 80%;
+    margin:0 auto;
+}
+.my_footer iframe{
+    margin-top: 1.5rem;
+    height:28rem;
+}
+/*.my_main{*/
+    /*height:20rem;*/
+/*}*/
+@media screen and (max-width: 991px){
+    .my_header iframe{
+        height:13rem;
+    }
+    .my_footer iframe{
+        height:40rem;
+    }
+    .my_footer iframe{
+        margin-top: 1.5rem;
+    }
+    .my_main{
+        height: 40rem;
+    }
+
+}
+/*修改指示符的样式为圆角*/
+.carousel-indicators li{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius:50%;
+}
+/*修改圆角默认颜色样式*/
+.carousel-indicators li.active{
+    background-color: #0aa1ed;
+}
+.carousel-caption{
+    top:-12px;
+}
+/*修改左右箭头的外部轮廓大小*/
+.carousel-control-prev,.carousel-control-next{
+    width: 3%;
+    height: 20%;
+    margin:auto;
+    background-color: rgba(0,0,0,.5);
+}
+.navbar_fixed_top{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/*楼层1的样式*/
+.floor_size{
+    width: 40%;
+    height: 65%;
+}
+/*楼层背景*/
+.bg_floor{
+    background-color: #e8e8e8;
+}
+.base_color{
+    color:#0aa1ed;
+}
+.base_bgColor{
+    background-color: #0aa1ed;
+}
+.my_img1{
+    height: 18rem;
+    margin-left: -10px;
+    transition:1s;
+}
+.my_img1:hover,.my_img2:hover,.my_img3:hover,.my_img4:hover{
+    transform:scale(1.1,1.1);
+}
+.my_img2{
+    height: 13rem;
+    margin-top:10%;
+    transition:1s;
+}
+.my_img3{
+    height: 13rem;
+    transition:1s;
+}
+.my_img4{
+    height:7.4rem;
+    transition: 1s;
+}
+.my_btn{
+    width: 6rem;
+}
+/*小屏*/
+@media screen and (max-width: 767px) {
+    .card{
+        margin:0 auto;
+    }
+    .my_img1{
+        width: 24rem;
+        margin:0 auto;
+    }
+    .my_img2{
+        width:18rem;
+        height: 12rem;
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+    }
+    .my_img3{
+        /*width:15rem;*/
+        /*height: 10rem;*/
+        /*margin-left: 10rem;*/
+        /*margin-bottom: 2rem;*/
+        margin-right: 2rem;
+    }
+}
+/*中屏*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .my_img1{
+        width: 15rem;
+        height: 12rem;
+        margin-top: 3rem;
+
+    }
+    .my_img2{
+        width: 8rem;
+        height: 9rem;
+        margin-right: 5rem;
+        margin-bottom: 19%;
+
+    }
+    .my_img3{
+        width: 8rem;
+        height: 9rem;
+        margin-right: 5rem;
+        margin-bottom: 19%;
+
+    }
+    .my_img4{
+        height: 5.5rem;
+    }
+}
+
