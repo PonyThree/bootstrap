@@ -104,6 +104,13 @@ body{
 .my_btn{
     width: 6rem;
 }
+/*图片hover放大效果*/
+.img_hov{
+    transition:1s linear;
+}
+.img_hov:hover{
+    transform:scale(1.1,1.1);
+}
 /*小屏*/
 @media screen and (max-width: 767px) {
     .card{
@@ -151,6 +158,36 @@ body{
     }
     .my_img4{
         height: 5.5rem;
+    }
+    /*中屏下的购物车一块*/
+    .shopping{
+        width: 100%;
+    }
+    .shopping button{
+        width: 1.5rem;
+    }
+    .shopping > input{
+        width: 1.5rem;
+    }
+    .shopping > a{
+        width: 5rem;
+    }
+    /*中屏商家公告购物车底部一块*/
+    .shop_car{
+        display: flex;
+        justify-content: flex-start;
+        width: 8rem;
+        background-color: #ff0;
+    }
+    .shop_car > img{
+        margin: 0;
+        width: 3rem;
+    }
+    .shop_car > span {
+        width: 2rem;
+    }
+    .shop_car >a{
+        width: 2rem;
     }
 }
 

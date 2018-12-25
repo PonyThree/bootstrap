@@ -145,7 +145,6 @@ boot把一些功能性的模块,进行了封装。
            <a href="#apple" class="nav-link active" data-toggle="tab">APPLE</a>
         ```
         + 页面刷新，默认显示的选项卡和内容没有设置
-        选项卡
 
 
 

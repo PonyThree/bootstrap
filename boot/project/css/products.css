@@ -1,0 +1,31 @@
+.bg-menubar{
+    background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+.w_10{
+    display: inline-block;
+    width: 3rem;
+    height: 1.8rem;
+    /*background-color: #ffaaff;*/
+}
+.input_bgcolor{
+    outline:none;
+    background:linear-gradient(to bottom, #f0f0f0 0%, #e0e0e0 100%);
+}
+.img_hov{
+    transition:1s linear;
+}
+.img_hov:hover{
+    transform:scale(1.1,1.1);
+}
+.bg-deepgray{
+    background-color: #808080;
+}
+.my_input_w{
+    width: 1rem;
+}
+.border-bottom{
+    border-bottom: 1px solid #000;
+}
+.my_img_div{
+    width: 100%;
+}

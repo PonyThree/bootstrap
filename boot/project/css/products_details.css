@@ -1,0 +1,24 @@
+.breadcrumb-item + .breadcrumb-item::before{
+    content:">";
+}
+.mar-top{
+    margin-top:-1.5rem;
+}
+.btn-outline-primary{
+    background-color: transparent;
+    bgckground-image:none;
+    border-color:#ddd;
+    border-radius: 0;
+    margin:0.2rem;
+}
+.btn-outline-primary:hover{
+    background-color: transparent;
+    bgckground-image:none;
+    color:#808080;
+    border-color: #0aa1ed;
+    margin:0.1rem;
+
+}
+.my_count_input_w{
+    width: 15%;
+}
